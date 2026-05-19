@@ -67,12 +67,17 @@ The app opens at `http://localhost:8501`.
 
 ```
 segmentation_app/
-├── app.py            # Streamlit UI — layout, controls, display
-├── processing.py     # Thresholding, K-Means, Watershed algorithms
-├── metrics.py        # Quantitative diagnostics
-├── utils.py          # Image loading, overlay, histogram plotting
+├── app.py                  # Streamlit UI — layout, controls, display
+├── processing.py           # Thresholding, K-Means, Watershed algorithms
+├── metrics.py              # Quantitative diagnostics
+├── utils.py                # Image loading, overlay, histogram plotting
+├── Dockerfile              # Docker config for Hugging Face deployment
 ├── requirements.txt
 ├── README.md
+├── .streamlit/
+│   └── config.toml         # Streamlit server configuration
+├── screenshots/
+│   └── image.png
 └── docs/
     └── design_choices.md
 ```
