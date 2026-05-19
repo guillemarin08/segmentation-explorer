@@ -1,3 +1,12 @@
+---
+title: Segmentation Explorer
+emoji: 🔬
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_file: app.py
+pinned: false
+---
 # Interactive Image Segmentation Explorer
 
 **Assignment 2 — Image Analysis Course, University of Bern**
