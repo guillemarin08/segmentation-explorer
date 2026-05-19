@@ -12,9 +12,10 @@ env/
 # VS Code
 .vscode/
 
-# Streamlit cache
-.streamlit/
-
 # OS
 .DS_Store
 Thumbs.db
+
+# Streamlit config 
+!.streamlit/
+!.streamlit/config.toml
