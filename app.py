@@ -172,7 +172,7 @@ dcol1, dcol2, dcol3 = st.columns([2, 1, 1])
 
 with dcol1:
     hist_fig = plot_histogram(image_np, seg, algorithm, extra)
-    st.pyplot(hist_fig)
+    st.pyplot(hist_fig, use_container_width=False)
 
 with dcol2:
     st.markdown("**Segmentation Metrics**")

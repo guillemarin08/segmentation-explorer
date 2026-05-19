@@ -82,7 +82,7 @@ def plot_histogram(image: np.ndarray, seg: np.ndarray,
     """
     Algorithm-appropriate histogram / diagnostic plot.
     """
-    fig, ax = plt.subplots(figsize=(5, 3))
+    fig, ax = plt.subplots(figsize=(5, 3), dpi=100)
     fig.patch.set_facecolor("#0e1117")   # match Streamlit dark background
     ax.set_facecolor("#0e1117")
 

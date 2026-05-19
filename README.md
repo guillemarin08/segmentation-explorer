@@ -52,34 +52,14 @@ The app opens at `http://localhost:8501`.
 
 ## Hugging Face Space
 
-🚀 **Live demo:** `https://huggingface.co/spaces/YOUR_USERNAME/segmentation-explorer`
+**Live demo:** `https://huggingface.co/spaces/guillemarin08/segmentation-explorer`
 
-*(Replace with your actual URL after deployment — see Deployment section below.)*
-
----
-
-## Deployment to Hugging Face Spaces
-
-1. Create a new Space at [huggingface.co/spaces](https://huggingface.co/spaces)
-   - SDK: **Streamlit**
-   - Visibility: **Public**
-
-2. Push this repository:
-   ```bash
-   git init
-   git add .
-   git commit -m "initial commit"
-   git remote add space https://huggingface.co/spaces/YOUR_USERNAME/segmentation-explorer
-   git push space main
-   ```
-
-3. Hugging Face will install `requirements.txt` and launch `app.py` automatically.
 
 ---
 
 ## Screenshots
 
-*(Add screenshots or a GIF here)*
+![App screenshot](screenshots/image.png)
 
 ---
 
@@ -106,3 +86,4 @@ segmentation_app/
 - Watershed can be **slow on large images** (>1 MP). The app caps images at 512 px to keep it responsive.
 - Adaptive thresholding block size must be **odd**; the app corrects this silently.
 - No ground-truth masks are available, so overlap metrics (Dice/IoU) are not computed.
+- File upload is disabled in the Hugging Face Space due to platform restrictions. Use the built-in sample images or run locally to test uploads.
